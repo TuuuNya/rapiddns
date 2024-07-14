@@ -22,7 +22,7 @@ public class RapiddnsServiceImpl implements RapiddnsService {
             return new ArrayList<>();
         }
 
-        List<String> subdomains = new ArrayList<>();
+        List<String> subdomains;
         subdomains = rapiddnsExtractor.extractSubdomains(responseBody);
         return subdomains;
     }
@@ -39,7 +39,7 @@ public class RapiddnsServiceImpl implements RapiddnsService {
             return new ArrayList<>();
         }
 
-        List<String> domains = new ArrayList<>();
+        List<String> domains;
         domains = rapiddnsExtractor.extractSubdomains(responseBody);
         return domains;
     }
